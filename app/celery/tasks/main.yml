@@ -1,0 +1,6 @@
+- name: Clone a github repository
+  git:
+    repo: https://github.com/s1baeumer/celery.git
+    dest: /data/projects/celery/
+    clone: yes
+    update: yes
