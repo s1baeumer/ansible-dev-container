@@ -1,0 +1,9 @@
+---
+- name: Setup DEV-LXC-CONTAINER on Ubuntu Server 24.04
+  hosts: all
+  become: true
+  remote_user: root
+  roles:
+    - roles/ubuntu-updates
+    - roles/docker
+    - roles/git

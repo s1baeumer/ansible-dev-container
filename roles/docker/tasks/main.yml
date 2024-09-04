@@ -39,9 +39,9 @@
     state: present
     update_cache: yes
 
-- name: Restart Docker
-  ansible.builtin.service:
-    name: docker
-    state: restarted
-    enabled: true
+#- name: Restart Docker
+#  ansible.builtin.service:
+#    name: docker
+#    state: restarted
+#    enabled: true
 

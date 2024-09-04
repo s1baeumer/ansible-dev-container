@@ -4,3 +4,10 @@
     dest: /data/projects/celery/
     clone: yes
     update: yes
+
+- name: deploy Docker Compose stack
+  community.docker.docker_compose_v2:
+    project_src: /data/projects/celery/
+    files:
+    - docker-compose.yml
+    remove_orphans: true

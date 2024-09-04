@@ -4,7 +4,7 @@
   become: true
   remote_user: root
   roles:
-    - config
-    - docker
-    - git
+    - roles/ubuntu-updates
+    - roles/docker
+    - roles/git
     - app/celery 
